@@ -71,7 +71,7 @@ export default defineComponent({
         Link,
     },
     
-    const eliminarUsuario = (id) => {
+    eliminarUsuario(id){
         Inertia.delete(route('usuarios.destroy', id))
     }
 });
