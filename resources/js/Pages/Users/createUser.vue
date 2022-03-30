@@ -110,7 +110,7 @@ export default defineComponent({
     },
     methods: {
         submit() {
-            Inertia.post(route("user.store"), this.form);
+            Inertia.post(route("/user"), this.form);
         },
         cleanForm: function () {
             this.form.name = "";
