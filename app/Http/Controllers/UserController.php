@@ -60,7 +60,7 @@ class UserController extends Controller
         $usuario->password = bcrypt($request->password);
         $usuario->save();
 
-        return Redirect::route('user');
+        return Redirect::route('user.index');
         // return Redirect::route('user.index')->with('message', 'Usuario creado');
     }
 
